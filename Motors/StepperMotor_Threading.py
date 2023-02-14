@@ -1,7 +1,7 @@
 # Run 2 stepper motors simultaneously with different step inputs per motor
 # Written by Briana Bouchard 
 
-from ThreadStepperLib import Stepper
+from Motors.ThreadStepperLib import Stepper
 import RPi.GPIO as GPIO
 
 # Define the GPIO pins for the L298N motor driver

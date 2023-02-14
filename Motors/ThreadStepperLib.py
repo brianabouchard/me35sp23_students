@@ -86,10 +86,13 @@ class Stepper (threading.Thread):
 
     def run(self):
         print("Starting " + str(self.name))
-        # Restore variable name for use in print statements
+
+        # Set GPIO pins for motors as outputs
         pin = 0
         for pin in range(0,4,1):
             GPIO.setup(self.motor[pin], GPIO.OUT)
+        
         moveSteps(self.motor,self.steps,self.steps_rev,self.speed)
+        
         print("Exiting " + str(self.name))
 
