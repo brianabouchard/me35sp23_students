@@ -18,4 +18,4 @@ The picamera2 library provides us with a way to capture images and video from ou
 
 `pip install opencv-python`
 
-Once opencv has been installed, try running Maddie's code 
+Once opencv has been installed, try running Maddie's code found in `PiCamera_FilterRed.py`
