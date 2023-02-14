@@ -12,6 +12,8 @@ Raspberry Pi OS comes with all the software and drivers you need to operate your
 
 One of these built-in apps is a command line tool: `libcamera-hello` This will turn on your camera and open a preview window to stream the video from your camera. In order to see the results, you should connect to your Pi through VNC Viewer so you can see the desktop and the preview window. Test your camera by entering `libcamera-hello` into the command line. 
 
+Alternatively, if you would prefer to access your Pi via SSH, you can use `libcamera-jpeg -o test.jpg` to take a photo and save it as test.jpg.
+
 
 ## Post-Processing
 The picamera2 library provides us with a way to capture images and video from our camera via Python code. But in order to do post-processing, we'll be using the opencv library. To install this library, open terminal and enter: 
