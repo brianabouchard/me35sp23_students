@@ -14,7 +14,7 @@ picam2 = Picamera2()
 picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous}) #sets auto focus mode
 
 picam2.start() #must start the camera before taking any images
-time.sleep(0.1)
+time.sleep(1)
 
 img_name = 'image.jpg'
 picam2.capture_file(img_name) #take image 
