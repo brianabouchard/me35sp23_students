@@ -11,8 +11,6 @@ import time
 picam2 = Picamera2()
 
 #configure the picamera
-capture_config = picam2.create_still_configuration() #automatically 4608x2592 width by height (columns by rows) pixels
-picam2.configure(capture_config)
 picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous}) #sets auto focus mode
 
 picam2.start() #must start the camera before taking any images
