@@ -16,10 +16,6 @@ This statement imports the dock action.
 '''
 from irobot_create_msgs.action import Dock
 
-'''
-Input your namespace here as a global variable. 
-'''
-
 class DockActionClient(Node):
     '''
     This is an action client. Action clients send goal requests to action servers.
