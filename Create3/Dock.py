@@ -23,7 +23,7 @@ Input your namespace here as a global variable.
 class DockActionClient(Node):
     '''
     This is an action client. Action clients send goal requests to action servers.
-    We are defining a class "DriveServoActionClient" which is a subclass of Node. 
+    We are defining a class "DockActionClient" which is a subclass of Node. 
     '''
 
     def __init__(self):
@@ -35,7 +35,7 @@ class DockActionClient(Node):
         
         '''
         Here we initiate a new action server. We include where to add the action client
-        (self), the type of action (DockServo), and the action name ('dock').
+        (self), the type of action (Dock), and the action name ('dock').
         '''  
         print('Initiating a new action server...')
         self._action_client = ActionClient(self, Dock,'/dock')
